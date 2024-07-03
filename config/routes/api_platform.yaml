@@ -1,0 +1,25 @@
+api_platform:
+    resource: .
+    type: api_platform
+    prefix: /api
+
+AddLeisure:
+    path: '/api/add-leisure'
+    controller: App\Controller\LeisureController::AddLeisure
+    methods: ['POST']
+
+listLeisures:
+    path: '/api/leisures'
+    controller: App\Controller\LeisureController::listLeisures
+    methods: ['GET']
+
+rateLeisure:
+    path: '/api/rate-leisure'
+    controller: App\Controller\RatingController::rateLeisure
+    methods: ['POST']
+
+
+topRatedLeisures:
+    path: '/api/top-rated-leisures'
+    controller: App\Controller\RatingController::topRatedLeisures
+    methods: ['GET']
